@@ -20,7 +20,7 @@ Make sure that the venv as active.
 
 Start by running the preprocessing step to generate the dataset required for all models:
 
-- [pre_processing_data_.ipynb](pre_processing_data_ (1).ipynb)
+- [pre_processing_data_.ipynb](pre_processing_data_(1).ipynb)
 
 ### 2. Feature Selection (Optional)
 
