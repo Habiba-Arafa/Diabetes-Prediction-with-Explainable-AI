@@ -26,7 +26,7 @@ Start by running the preprocessing step to generate the dataset required for all
 
 If you wish to perform feature selection, you can run:
 
-- [Feature_selection_rahma&jehadipynb.ipynb](Feature_selection_rahma&jehadipynb (1).ipynb)
+- [Feature_selection_rahma&jehadipynb.ipynb](Feature_selection_rahma&jehadipynb%20(1).ipynb)
 
 ### 3. Model Execution
 
@@ -39,7 +39,7 @@ Each model has its own notebook. These are already rendered with outputs and do 
 - [Habiba_Arafa_SVM_RF.ipynb](Habiba_Arafa_SVM_RF.ipynb)
 - [MariamHassan_final.ipynb](MariamHassan_final.ipynb)
 - [RandomForest_JehadMahmoud.ipynb](RandomForest_JehadMahmoud.ipynb)
-- [VotingClassifier_JehadMahmoud.ipynb](VotingClassifier_JehadMahmoud (2).ipynb)
+- [VotingClassifier_JehadMahmoud.ipynb](VotingClassifier_JehadMahmoud%20(2).ipynb)
 - [XGBoostJehadMahmoud.ipynb](XGBoostJehadMahmoud.ipynb)
 - [XGBoost_with_ADASYN_rahma_.ipynb](XGBoost_with_ADASYN_rahma_(1).ipynb)
 
