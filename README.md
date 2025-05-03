@@ -32,16 +32,19 @@ If you wish to perform feature selection, you can run:
 
 Each model has its own notebook. These are already rendered with outputs and do not need to be rerun unless you wish to experiment further. You can open any of the following:
 
-- [BPNN_FOR_rahma_resubmit_.ipynb](BPNN_FOR_rahma_resubmit_.ipynb)
-- [DEEPNET_2_RAHMA.ipynb](DEEPNET_2_RAHMA.ipynb)
+- [Rahma Ibrahim BPNN.ipynb](BPNN_FOR_rahma_resubmit_.ipynb)
+- [Rahma Ibrahim DEEPNET_2.ipynb](DEEPNET_2_RAHMA.ipynb)
+- [Rahma Ibrahim XGBoost with ADASYN.ipynb](XGBoost_with_ADASYN_rahma_(1).ipynb)
+
 - [Habiba_Arafa_Extreme_Tree_Classifier.ipynb](Habiba_Arafa_Extreme_Tree_Classifier.ipynb)
 - [Habiba_Arafa_KNN.ipynb](Habiba_Arafa_KNN.ipynb)
 - [Habiba_Arafa_SVM_RF.ipynb](Habiba_Arafa_SVM_RF.ipynb)
+
 - [MariamHassan_final.ipynb](MariamHassan_final.ipynb)
-- [RandomForest_JehadMahmoud.ipynb](RandomForest_JehadMahmoud.ipynb)
-- [VotingClassifier_JehadMahmoud.ipynb](VotingClassifier_JehadMahmoud%20(2).ipynb)
-- [XGBoostJehadMahmoud.ipynb](XGBoostJehadMahmoud.ipynb)
-- [XGBoost_with_ADASYN_rahma_.ipynb](XGBoost_with_ADASYN_rahma_(1).ipynb)
+
+- [Jehad Mahmoud RandomForest.ipynb](RandomForest_JehadMahmoud.ipynb)
+- [Jehad Mahmoud VotingClassifier.ipynb](VotingClassifier_JehadMahmoud%20(2).ipynb)
+- [Jehad Mahmoud XGBoost.ipynb](XGBoostJehadMahmoud.ipynb)
 
 ## Notes
 
