@@ -37,7 +37,7 @@ Each model has its own notebook. These are already rendered with outputs and do 
 - [Rahma Ibrahim XGBoost with ADASYN.ipynb](XGBoost_with_ADASYN_rahma_(1).ipynb)
 
 - [Habiba_Arafa_Extreme_Tree_Classifier.ipynb](Habiba_Arafa_Extreme_Tree_Classifier.ipynb)
-- [Habiba_Arafa_KNN.ipynb](Habiba_Arafa_KNN.ipynb)
+- [Habiba_Arafa_KNN.ipynb](HabibaArafa_knn_pynb.ipynb)
 - [Habiba_Arafa_SVM_RF.ipynb](Habiba_Arafa_SVM_RF.ipynb)
 
 - [Mariam Hassan_final.ipynb](MariamHassan_final.ipynb)
