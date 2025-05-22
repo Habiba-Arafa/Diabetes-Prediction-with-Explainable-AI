@@ -112,7 +112,7 @@ Diabetes is a global health challenge, and its early detection can significantly
 
 ##  Conclusion
 
-The integration of ML/DL models with robust XAI techniques provides a reliable framework for diabetes diagnosis. While models like Random Forest and BPNN achieve high accuracy, explainability tools like SHAP and LIME ensure transparency, fostering trust in AI-driven clinical decision support systems.
+The integration of ML/DL models with robust XAI techniques provides a reliable framework for diabetes diagnosis. While models like Random Forest and BPNN achieve high accuracy, explainability tools like SHAP and LIME ensure transparency and trust in AI-driven clinical decision support systems.
 
 ---
 
