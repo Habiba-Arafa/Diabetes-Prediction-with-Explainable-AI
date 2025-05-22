@@ -1,55 +1,121 @@
-# Phase 3 for DSAI 305 Project
 
-This repository contains phase 3 of the DSAI 305 project, encompassing data preprocessing, feature selection, and selected paper based models.
-
-
-### 1. Set Up a Virtual Environment
-
-It's recommended to use a virtual environment to manage dependencies and avoid conflicts:
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-Make sure that the venv as active.
+#  Diabetes Diagnosis using Machine Learning, Deep Learning, and Explainable AI
 
 
-## Workflow Instructions
+## Abstract
 
-### 1. Data Preprocessing
-
-Start by running the preprocessing step to generate the dataset required for all models:
-
-- [pre_processing_data_Mariam&Habiba.ipynb](pre_processing_data_%20(1).ipynb)
-
-### 2. Feature Selection (Optional)
-
-If you wish to perform feature selection, you can run:
-
-- [Feature_selection_rahma&jehad.ipynb](Feature_selection_rahma&jehadipynb%20(1).ipynb)
-
-### 3. Model Execution
-
-Each model has its own notebook. These are already rendered with outputs and do not need to be rerun unless you wish to experiment further. You can open any of the following:
-
-- [Rahma Ibrahim BPNN.ipynb](BPNN_FOR_rahma_resubmit_.ipynb)
-- [Rahma Ibrahim DEEPNET_2.ipynb](DEEPNET_2_RAHMA.ipynb)
-- [Rahma Ibrahim XGBoost with ADASYN.ipynb](XGBoost_with_ADASYN_rahma_(1).ipynb)
-
-- [Habiba_Arafa_Extreme_Tree_Classifier.ipynb](Habiba_Arafa_Extreme_Tree_Classifier.ipynb)
-- [Habiba_Arafa_KNN.ipynb](HabibaArafa_knn_pynb.ipynb)
-- [Habiba_Arafa_SVM_RF.ipynb](Habiba_Arafa_SVM_RF.ipynb)
-
-- [Mariam Hassan_final.ipynb](MariamHassan_final.ipynb)
-
-- [Jehad Mahmoud RandomForest.ipynb](RandomForest_JehadMahmoud.ipynb)
-- [Jehad Mahmoud VotingClassifier.ipynb](VotingClassifier_JehadMahmoud%20(2).ipynb)
-- [Jehad Mahmoud XGBoost.ipynb](XGBoostJehadMahmoud.ipynb)
-
-## Notes
-
-- Ensure the data from preprocessing is available before running any model.
-- Feature selection is optional but can enhance performance.
-- All notebooks are pre-executed and include outputs.
+This project explores the predictive modeling of diabetes using both traditional Machine Learning (ML) and Deep Learning (DL) approaches, combined with Explainable AI (XAI) techniques. The PIMA Indian Diabetes Dataset was used to evaluate multiple models, perform feature selection, and apply interpretability methods including SHAP, LIME, PDP, ICE, LOFO, PFI, Global Surrogate Tree models. The study aims to offer high-accuracy predictions while maintaining transparency crucial for clinical decision-making.
 
 ---
+
+##  Problem Statement
+
+Diabetes is a global health challenge, and its early detection can significantly improve patient outcomes. However, the adoption of AI-based diagnostic tools in clinical settings is limited by their lack of transparency. This study focuses on:
+- Comparing ML and DL models for diabetes diagnosis.
+- Enhancing interpretability using XAI techniques.
+- Evaluating clinical applicability of interpretable models.
+
+---
+
+##  Dataset
+
+- **Source:** PIMA Indian Diabetes Dataset (Kaggle)
+- **Records:** 768
+- **Features:** 8 input features + 1 binary outcome (`Outcome`)
+- **Key Features:** Glucose, BMI, Age, Insulin, Pregnancies, BloodPressure, DiabetesPedigreeFunction
+
+---
+
+##  Methodology
+
+### 1. Exploratory Data Analysis (EDA)
+- Visualization: Histograms, Heatmaps
+- Insights: Glucose is the strongest predictor; class imbalance present
+
+### 2. Preprocessing
+- Handling imbalance using undersampling and ADASYN
+- Outlier detection
+- Scaling and normalization
+- PCA and t-SNE for visualization
+
+### 3. Feature Selection
+- Techniques: Chi-square, ANOVA, RFE, Information Gain, Relief, Forward/Backward Selection
+- Final Top 7 Features: Glucose, BMI, Age, Insulin, Pregnancies, BloodPressure, DiabetesPedigreeFunction
+
+### 4. Model Training
+- **ML Models:** SVM, Random Forest, XGBoost, KNN, Voting Classifier
+- **DL Models:** ANN, ConvLSTM, BPNN
+- **Tuning:** GridSearchCV, 5-fold Cross-Validation
+
+---
+
+## Evaluation Metrics
+
+- Accuracy
+- Precision
+- Recall (Sensitivity)
+- Specificity
+- F1-Score
+- ROC-AUC
+- Learning and validation curves
+
+---
+
+##  Explainable AI (XAI)
+
+### Tools Used:
+- **SHAP:** Global and local feature importance
+- **LIME:** Instance-level prediction explanations
+- **PDP & ICE:** Feature effect visualization
+- **LOFO:** Performance drop after feature removal
+- **PFI:** Impact of feature value shuffling
+- **Surrogate Trees:** Model approximation via decision trees
+
+### XAI Evaluation Metrics:
+- Fidelity
+- Faithfulness
+- Stability
+- Consistency
+
+---
+
+## Results
+
+| Model            | Accuracy |
+|------------------|----------|
+| Random Forest    | 89%      |
+| BPNN             | 89%      |
+| XGBoost          | 85%      |
+| Voting Classifier| 85%+     |
+| SVM              | 83%+     |
+
+- **Best Explainer:** SHAP for both global and local insights
+- **Key Features:** Glucose, BMI, Age
+- **Challenge:** DL models underperformed due to dataset size
+
+---
+
+##  Key Findings
+
+- Feature selection significantly boosts accuracy and interpretability.
+- Ensemble models like XGBoost achieve a balance between accuracy and explainability.
+- SHAP and LIME are effective for medical decision support.
+- Interpretability tools offer both global insights and patient-level justifications.
+
+---
+
+##  Limitations
+
+- Small dataset size restricts DL performance
+- SHAP computational cost is high
+---
+
+##  Conclusion
+
+The integration of ML/DL models with robust XAI techniques provides a reliable framework for diabetes diagnosis. While models like Random Forest and BPNN achieve high accuracy, explainability tools like SHAP and LIME ensure transparency, fostering trust in AI-driven clinical decision support systems.
+
+---
+
+##  References
+
+Full references are provided in the paper and include works on XAI, ensemble models, SHAP, LIME, and applications of ML in healthcare.
